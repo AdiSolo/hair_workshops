@@ -63,6 +63,7 @@ line-height: 107.23%;
  a {
     font-style: normal;
     font-size: 16px;
+    cursor: pointer;
  }
 
 
@@ -72,6 +73,7 @@ input, button {
 }
 select {
     border: none;
+    outline: none;
 }
 input {
     height: 40px;
@@ -148,7 +150,7 @@ html,body {
 }
 
  .active a {
-    color: #FD2F54 !important;
+    color: #FD2F54 ;
 }
  /*
    ******** Header CSS ********
@@ -421,6 +423,45 @@ display: flex;
     width: 80px !important;
     height: 80px;
 }
+/*
+   ******** Pagination  ********
+*/
+
+.pagination ul {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.pagination ul li{
+    display: inline-flex;
+    width: 43px;
+    height: 43px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination ul li a {
+    color: #000;
+}
+.pagination ul .active {
+    display: flex;
+    width: 43px;
+    height: 43px;
+    background: #000000;
+    border-radius: 50px;
+
+}
+.pagination ul .active a{
+    color: #fff;
+}
+
+/*
+   ******** End Pagination ********
+*/
 /*
    ******** Footer Section ********
 */
