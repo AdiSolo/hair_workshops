@@ -66,7 +66,9 @@ line-height: 107.23%;
     cursor: pointer;
  }
 
-
+ a h3 {
+     color: #000;
+ }
 
 input, button {
     outline: none;
@@ -151,6 +153,9 @@ html,body {
 
  .active a {
     color: #FD2F54 ;
+}
+.dot {
+    color: #FD2F54;
 }
  /*
    ******** Header CSS ********
@@ -279,7 +284,9 @@ display: flex;
     border-radius: 50%;
     text-align: center; 
     margin-left: 20px;
+    border: 1px solid #E3E3E3;
 }
+
  /*
    ******** Header Content ********
   */
@@ -462,6 +469,81 @@ display: flex;
 /*
    ******** End Pagination ********
 */
+
+/*
+   ******** Single Course ********
+*/
+
+.content .details {
+    display: flex;
+}
+
+.content .details .remaining-days {
+    display: flex;
+    height: 34px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+.content .details .remaining-days h3 {
+    width: 34px;
+    height: 34px;
+    color: #000;
+    border: 1px solid 
+}
+.content p {
+    margin: 30px 0 75px 0;
+}
+.content .cta {
+    display: inline-flex;
+    padding: 15px 20px;
+}
+
+/*
+   ******** Single Course ********
+*/
+
+/*
+   ******** About Page ********
+*/
+
+.about-intro {
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #E3E3E3;
+}
+.about-intro h1{
+    padding-bottom: 20px;
+}
+.about-intro h1,
+.about-intro p {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-block{
+    display: flex;
+}
+.content-block {
+padding-right: 15px;
+}
+
+.pl{
+    padding-left: 15px;
+}
+.pr {
+    padding-right: 15px;
+}
+    
+
+/*
+   ******** End About Page ********
+*/
+
+
+
 /*
    ******** Footer Section ********
 */
@@ -645,3 +727,31 @@ display: flex;
       background-repeat: no-repeat;
 
   }
+
+
+
+
+
+  
+  .chart {
+    display: flex;
+    width: 34px;
+    height: 34px;
+    margin: 0 10px;
+    justify-content: center;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 22px;
+  }
+  .chart span {
+    height: 40px;
+    align-self: center;
+  }
+  .chart canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
