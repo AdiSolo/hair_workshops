@@ -65,8 +65,30 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
    })(jQuery); 
-
-
-
        
-          
+   $('.hamburger-menu').on('click', function(){
+    $(this).toggleClass('close-menu');
+    $('.nav').toggleClass('open');
+   });         
+
+
+
+   $(document).click(function (e) {
+    if ($(e.target).is('.user-menu')) {
+        $('.user-menu').fadeOut(500);
+    }
+
+});
+
+
+$(".user-menu").click(function(){
+  $(".user-menu-popup ").toggleClass("visible");
+});
+
+
+$(document).click(function(event) {
+  //if you click on anything except the modal itself or the "open modal" link, close the modal
+  if (!$(event.target).closest(".user-menu, .user-menu-popup ").length) {
+    $("body").find(".user-menu-popup").removeClass("visible");
+  }
+});

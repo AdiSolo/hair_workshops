@@ -18,7 +18,8 @@
 </head>
 <body>
     <section class="header cover">
-        <div class="wrapper">
+    
+        <div class="wrapper nav ">
             <div class="logo">
                 <a href="/index.html">
                     <img src="/assets/images/logo.png" alt="logo">
@@ -30,11 +31,12 @@
                     <li><a href="/about.html">About</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search here...">
+                    <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                </div>
             </div>
-            <div class="search">
-                <input type="text" placeholder="Search here...">
-                <span><i class="fa fa-search" aria-hidden="true"></i></span>
-            </div>
+          
             <div class="secondary-menu">
                 <select name="language" id="lang">
                     <option value="RO">RO</option>
@@ -43,6 +45,12 @@
                 <div class="user-menu">
                     <div class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
                     <i class="fa fa-user" aria-hidden="true"></i>
+                    <div class="mobile-menu">
+                        <div class="hamburger-menu">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -556,6 +564,15 @@
         <div class="copyright">© Learhair 2020. All rights reserved.</div>
     </div>
 </section>
+
+    <div class="user-menu-popup">
+            <ul>
+                <li>My workshops</li>
+                <li>My settings</li>
+                <li>Log out</li>
+
+            </ul>
+    </div>
 
 <!-- End Footer Section -->
 </body>
